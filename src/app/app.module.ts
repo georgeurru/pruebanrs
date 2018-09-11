@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { HttpModule } from '@angular/http';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { Push } from '@ionic-native/push';
 
 import { MyApp } from './app.component';
 
@@ -51,6 +52,7 @@ import { UtilsProvider } from '../providers/utils/utils';
   providers: [
     StatusBar,
     SplashScreen,
+    Push,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RestProvider,
     ConstantsProvider,
