@@ -7,12 +7,74 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>people</ion-title>
+    <ion-title>{{constants.TITULO_PEOPLE}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-card > 
+    <ion-card-header>
+      {{actor.name}}
+    </ion-card-header>
+    <ion-card-content>
+      <ion-row>
+        <ion-col>
+          {{constants.LABEL_HEIGHT}}
+        </ion-col>
+        <ion-col>
+          {{actor.height}}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          {{constants.LABEL_MASS}}
+        </ion-col>
+        <ion-col>
+          {{actor.mass}}
+        </ion-col>
+      </ion-row>  
+      <ion-row>
+        <ion-col>
+          {{constants.LABEL_HAIR_COLOR}}
+        </ion-col>
+        <ion-col>
+          {{actor.hair_color}}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          {{constants.LABEL_SKIN_COLOR}}
+        </ion-col>
+        <ion-col>
+          {{actor.skin_color}}
+        </ion-col>
+      </ion-row>  
+      <ion-row>
+        <ion-col>
+          {{constants.LABEL_EYE_COLOR}}
+        </ion-col>
+        <ion-col>
+          {{actor.eye_color}}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          {{constants.LABEL_BIRTH_YEAR}}
+        </ion-col>
+        <ion-col>
+          {{actor.birth_year}}
+        </ion-col>
+      </ion-row> 
+      <ion-row>
+        <ion-col>
+          {{constants.LABEL_GENDER}}
+        </ion-col>
+        <ion-col>
+          {{actor.gender}}
+        </ion-col>
+      </ion-row>      
+    </ion-card-content>
+  </ion-card>
 </ion-content>

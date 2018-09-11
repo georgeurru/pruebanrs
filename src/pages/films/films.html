@@ -39,7 +39,7 @@
         <ion-item-divider color="secondary">{{constants.LABEL_ACTORS}}</ion-item-divider>
         <ion-list inset>
           <button ion-item *ngFor="let actor of item.characters" (click)="actorSelected(actor)">
-            {{ actor }}
+            {{ actor.name }}
           </button> 
         </ion-list>
       </ion-item-group>

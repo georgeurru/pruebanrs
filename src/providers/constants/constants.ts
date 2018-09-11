@@ -36,12 +36,26 @@ export class ConstantsProvider {
   public TITULO_STARSHIPS: string = "Vista Naves Estelares";
 
   /*
- * Constantes Ventana Films
- */
+  * Constantes Ventana Films
+  */
   public TITULO_FILMS: string = "Vista Peliculas";
   public LABEL_DIRECTOR: string = "Director";
   public LABEL_PRODUCER: string = "Productor";
   public LABEL_ACTORS: string = "Actores";
+
+  /*
+  * Constantes Ventana People
+  */
+  public TITULO_PEOPLE: string = "Vista Actor";
+  public LABEL_NAME: string = "Nombres";
+  public LABEL_HEIGHT: string = "Estatura";
+  public LABEL_MASS: string = "Peso";
+  public LABEL_HAIR_COLOR: string = "Cabello";
+  public LABEL_SKIN_COLOR: string = "Piel";
+  public LABEL_EYE_COLOR: string = "Ojos";
+  public LABEL_BIRTH_YEAR: string = "Año Nacimiento";
+  public LABEL_GENDER: string = "Genero";
+
 
   /*
   * MENSAJES DE USUARIO

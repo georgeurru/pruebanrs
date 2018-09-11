@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
+
+
+import { ConstantsProvider } from '../../providers/constants/constants';
 /**
  * Generated class for the PeoplePage page.
  *
@@ -15,11 +18,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PeoplePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  actor: any = {};
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,public constants: ConstantsProvider) {
+    this.actor = navParams.get("actor");
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PeoplePage');
+    
   }
+
+
 
 }
