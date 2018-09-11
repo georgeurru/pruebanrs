@@ -1,0 +1,48 @@
+<!--
+  Generated template for the FilmsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{constants.TITULO_FILMS}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card *ngFor="let item of films"> 
+    <ion-card-header>
+      {{item.title}}
+    </ion-card-header>
+    <ion-card-content>
+      <ion-row>
+        <ion-col>
+          {{constants.LABEL_DIRECTOR}}
+        </ion-col>
+        <ion-col>
+          {{item.director}}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          {{constants.LABEL_PRODUCER}}
+        </ion-col>
+        <ion-col>
+          {{item.producer}}
+        </ion-col>
+      </ion-row>
+      <ion-item-group>
+        <ion-item-divider color="secondary">{{constants.LABEL_ACTORS}}</ion-item-divider>
+        <ion-list inset>
+          <button ion-item *ngFor="let actor of item.characters" (click)="actorSelected(actor)">
+            {{ actor }}
+          </button> 
+        </ion-list>
+      </ion-item-group>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
